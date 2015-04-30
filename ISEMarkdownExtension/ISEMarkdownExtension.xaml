@@ -47,7 +47,7 @@
 
 
         </ToolBar>
-        <WebBrowser Name="wb" Grid.Row="1"></WebBrowser>
+        <WebBrowser Name="wb" Grid.Row="1" ></WebBrowser>
         <StatusBar Grid.Row="2" >
             <TextBlock Name="textblock_Statusbar"/>
             <TextBlock>

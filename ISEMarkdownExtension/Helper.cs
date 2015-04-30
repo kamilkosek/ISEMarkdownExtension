@@ -55,7 +55,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   color: #333;
-  overflow: hidden;
+  
   font-family: ""Helvetica Neue"", Helvetica, ""Segoe UI"", Arial, freesans, sans-serif;
   font-size: 16px;
   line-height: 1.6;

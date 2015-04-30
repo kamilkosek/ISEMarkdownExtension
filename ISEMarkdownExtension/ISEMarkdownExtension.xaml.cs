@@ -66,15 +66,15 @@ namespace ISEMarkdownExtension
                 }
 
             }
-            else
-            {
-                object ev = e;
-            }
+            
         }
 
         void OnFileEdited(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            RefreshMarkdownView();
+            if (e.PropertyName == "IsSaved")
+            {
+                RefreshMarkdownView();
+            }
         }
         static List<MarkdownTag> MarkdownTags = new List<MarkdownTag> 
         { 

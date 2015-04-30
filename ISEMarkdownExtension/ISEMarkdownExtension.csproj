@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\Users\Kamil.kosek\Documents\WindowsPowerShell\Modules\ISEGit\</OutputPath>
+    <OutputPath>..\..\..\Users\Kamil.kosek\Documents\WindowsPowerShell\Modules\ISEMarkdownExtension\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
