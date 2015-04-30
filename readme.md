@@ -18,7 +18,7 @@ If you don't know Markdown Tags, you can use the Buttons in the addon to include
 
 , to hide it type `Hide-ISEMarkdownExtension`. 
 
-Don't expect too much of this Module, I'm not a developer :smiley:
+Don't expect too much from this Module, I'm not a developer :smiley:
 
 
 
