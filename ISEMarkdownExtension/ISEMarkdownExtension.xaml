@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="ISEMarkdownExtension.ISEMarkdownControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Image Source="Resources/text_bold.png" x:Key="bold"></Image>
+        <Image Source="Resources/text_heading_1.png" x:Key="h1"></Image>
+        <Image Source="Resources/text_heading_2.png" x:Key="h2"></Image>
+        <Image Source="Resources/text_heading_3.png" x:Key="h3"></Image>
+        <Image Source="Resources/text_horizontalrule.png" x:Key="hr"></Image>
+        <Image Source="Resources/text_indent_remove.png" x:Key="indent_remove"></Image>
+        <Image Source="Resources/text_italic.png" x:Key="italic"></Image>
+        <Image Source="Resources/text_list_bullets.png" x:Key="list_bullets"></Image>
+        <Image Source="Resources/text_list_numbers.png" x:Key="list_numbers"></Image>
+        <Image Source="Resources/text_strikethrough.png" x:Key="strikethrough"></Image>
+        <Image Source="Resources/text_underline.png" x:Key="underline"></Image>
+        <Image Source="Resources/help.png" x:Key="help"></Image>
+        <Image Source="Resources/world_link.png" x:Key="world_link"></Image>
+        <Image Source="Resources/image_add.png" x:Key="image_add"></Image>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="25"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <ToolBar>
+            <Button Name="h1" Content="{StaticResource h1}" Click="Button_InsertTag"></Button>
+            <Button Name="h2" Content="{StaticResource h2}" Click="Button_InsertTag"></Button>
+            <Button Name="h3" Content="{StaticResource h3}" Click="Button_InsertTag"></Button>
+            <Separator></Separator>
+            <Button Name="bold" Content="{StaticResource bold}" Click="Button_InsertTag" ></Button>
+            <Button Name="italic" Content="{StaticResource italic}" Click="Button_InsertTag"></Button>
+            <Button Name="strikethrough" Content="{StaticResource strikethrough}" Click="Button_InsertTag"></Button>
+            <Separator></Separator>
+            <Button Name="link" Content="{StaticResource world_link}" Click="Button_InsertTag"></Button>
+            <Button Name="image" Content="{StaticResource image_add}" Click="Button_InsertTag"></Button>
+            <Separator></Separator>
+            <Button Name="list_bullets" Content="{StaticResource list_bullets}" Click="Button_InsertTag"></Button>
+            <Button Name="list_numbers" Content="{StaticResource list_numbers}" Click="Button_InsertTag"></Button>
+            <Separator></Separator>
+            <Button Content="{StaticResource help}" Click="Button_Click"></Button>
+
+
+        </ToolBar>
+        <WebBrowser Name="wb" Grid.Row="1"></WebBrowser>
+        <StatusBar Grid.Row="2" >
+            <TextBlock Name="textblock_Statusbar"/>
+            <TextBlock>
+                <TextBlock Text="ISEMarkdown - "></TextBlock>
+                        <Hyperlink Click="Hyperlink_Click">
+                            @kamilkosek
+                        </Hyperlink>
+                
+            </TextBlock>
+
+        </StatusBar>
+    </Grid>
+</UserControl>
